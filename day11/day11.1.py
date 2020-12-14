@@ -22,7 +22,6 @@ def task1(arr):
             if j > 0:
                 check += arr[i][j-1]
             
-            check = sorted(check)
             if '#' not in check and arr[i][j] == 'L':
                 if j == 0:
                     newArr[i] = '#' + newArr[i][1:]

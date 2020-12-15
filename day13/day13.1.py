@@ -1,10 +1,6 @@
-from math import inf
-
 def task1(timestamp, bus):
     nextBus = bus - (timestamp%bus) #minutes until next bus
     return nextBus
-
-
 
 #==============================================================================
 inputFile = open("input.txt", 'r')

@@ -27,7 +27,7 @@ def getInput(inputFile):
         nearbyTickets.append(line)
     return cond, myTicket, nearbyTickets
 
-def asingNumbers(cond):
+def assingNumbers(cond):
     numbers = set()
     for interval in cond:
         for i in range(interval[0], interval[1]+1):
@@ -47,6 +47,6 @@ inputFile = open("input.txt", 'r')
 cond, myTicket, nearbyTickets = getInput(inputFile)
 inputFile.close()
 
-numbers = asingNumbers(cond)
+numbers = assingNumbers(cond)
 print(task1(numbers, nearbyTickets))
 
